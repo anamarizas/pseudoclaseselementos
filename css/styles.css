@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:aliceblue;
+}
+.menu{
+    background-color: aliceblue;
+    text-align: center;
+    height: 4rem;
+}
+.slider{
+    background-color: lightblue;
+    height: 3rem;
+    text-align:center;
+    color: azure;
+}
+.after{
+    background-color: darkturquoise;
+    height: 15rem;
+    text-align:center;
+    border: solid aliceblue 2px;
+}
+.before{
+    background-color: lightgray;
+    height: 15rem;
+    text-align:center;
+    border: solid aliceblue 2px;
+}
+.firstletter{
+    background-color: lightseagreen;
+    height: 15rem;
+    text-align:center;
+    border: solid aliceblue 2px;
+}
+.firstline{
+    background-color: darkturquoise;
+    height: 15rem;
+    text-align:center;
+    border: solid aliceblue 2px;
+}
+.grammarerror{
+    background-color: lightgrey;
+    height: 15rem;
+    text-align:center;
+    border: solid aliceblue 2px;
+}
+.selection{
+    background-color:lightseagreen;
+    height: 15rem;
+    text-align:center;
+    border: solid aliceblue 2px;
+}  
+.spellingerror{
+    background-color: darkgrey;
+    height: 15rem;
+    text-align:center;
+    border: solid aliceblue 2px;
+} 
+    
+  
+
+  
+   
+      
