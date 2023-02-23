@@ -10,49 +10,49 @@ body{
     height: 4rem;
 }
 .slider{
-    background-color: lightblue;
+    background-color: lightsteelblue;
     height: 3rem;
     text-align:center;
     color: azure;
 }
 .after{
-    background-color: darkturquoise;
+    background-color: lightblue;
     height: 15rem;
     text-align:center;
     border: solid aliceblue 2px;
 }
 .before{
-    background-color: lightgray;
+    background-color: lightblue;
     height: 15rem;
     text-align:center;
     border: solid aliceblue 2px;
 }
 .firstletter{
-    background-color: lightseagreen;
+    background-color: lightblue;
     height: 15rem;
     text-align:center;
     border: solid aliceblue 2px;
 }
 .firstline{
-    background-color: darkturquoise;
+    background-color: lightblue;
     height: 15rem;
     text-align:center;
     border: solid aliceblue 2px;
 }
 .grammarerror{
-    background-color: lightgrey;
+    background-color: lightblue;
     height: 15rem;
     text-align:center;
     border: solid aliceblue 2px;
 }
 .selection{
-    background-color:lightseagreen;
+    background-color:lightblue;
     height: 15rem;
     text-align:center;
     border: solid aliceblue 2px;
 }  
 .spellingerror{
-    background-color: darkgrey;
+    background-color: lightblue;
     height: 15rem;
     text-align:center;
     border: solid aliceblue 2px;
