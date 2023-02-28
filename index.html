@@ -11,7 +11,7 @@
   <body>
     <header class="container">
       <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 menu">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12 menu">
               <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">Ana María</a>
@@ -51,235 +51,351 @@
           </div>
     </header>
       <nav class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 slider">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12 slider">
               <h1>::PSEUDO ELEMENTOS</h1>
           </div>
       </nav>
       <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 after">
             <h1>::after</h1>
-            <p class="boring-text">Here is some plain old boring text.</p>
+            <p class="boring-text">Sirve para cambiar algún elemento al </p>
             <style>
               .boring-text::after {
-                content: " <- BORING";
+                content: " <- FINAL";
                 color: red;
               }
             </style>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 before">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 before">
             <h1>::before</h1>
-            <q>Some quotes</q>, he said, <q>are better than none</q>.
+            <q>Sirve para</q> cambiar <q>algún elemento al inicio</q>.
             <style>
               q::before {
                 content: "<";
-                color: blue;
+                color: aliceblue;
               }
             </style>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 firstletter">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3  firstletter">
               <h1>::first letter</h1>
-              <h2>My heading</h2>
+              <h2 style="color: blue;">Título</h2>
               <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                 eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
                 voluptua. 
               </p>
-              <style>
-                p {
-                  height: 15rem;
-                  line-height: 1.5;
-                }
-                h2 + p::first-letter {
-                  color: black;
-                  background-color: aliceblue;
-                  border-radius: 2px;
-                  box-shadow: 3px 3px 0 lightseagreen;
-                  font-size: 250%;
-                  padding: 6px 3px;
-                  margin-right: 6px;
-                  float: left;
-                }
-              </style>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 firstline">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3  ::first-line">
               <h1>::first line</h1>
               <p>
                 Styles will only be applied to the first line of this paragraph. After that,
                 all text will be styled like normal. See what I mean?
               </p>
-              
-              <span>
-                The first line of this text will not receive special styling because it is not
-                a block-level element.
-              </span>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 grammarerror">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 grammarerror">
               <h1>::grammar error</h1>
+              <p>My friends is coming to the party tonight.</p>
+              <style>
+                ::grammar-error {
+                text-decoration: underline red;
+                color: red;
+                }
+
+              </style>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 selection">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3  selection">
               <h1>::selection</h1>
+              <p>
+                Aplica reglas a una porción de un documento que ha sido destacado (por ejemplo: selección con el mouse o algún otro puntero en un dispositivo) del usuario.
+              </p>
+
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 spellingerror">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 spellingerror">
               <h1>::spelling error</h1>
+              <p>
+                Representa un segmento de texto que el user agent (en-US) ha marcado como deletreado incorrectamente.
+              </p>
           </div>
       </div>
       <nav class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 slider">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 slider">
             <h1>:PSEUDO CLASES</h1>
         </div>
       </nav>
       <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 active" >
               <h1>:active</h1>
+              <p>
+                Representa un elemento (como un botón) que el usuario está activando. Cuando se usa un mouse, la "activación" generalmente comienza cuando el usuario presiona el botón primario del mouse y termina cuando se suelta. La pseudo-clase :active se usa comúnmente en los elementos a y button, pero también se puede usar en otros elementos.
+              </p>
+              <a href="#">Este enlace cambia de color al hacer clic en él.</a>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 before">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 :" >
               <h1>:any link</h1>
+              <p>
+                Representa a un elemento que actúa como el ancla origen de un hipervínculo independientemente de si ha sido visitado, es decir, coincide con cualquier elemento a, area o link con un atributo href. Por lo tanto, coincide con todos los elementos que coincidan con :link o :visited.
+              </p>
+              <a href="https://example.com">Enlace externo</a><br>
+              <a href="#">Enlace de destino interno</a><br>
+              <a>Enlace de marcador de posición (no se personalizará)</a>
+
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 firstletter">
-              <h1>:blank</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 firstline">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 :" >
               <h1>:checked</h1>
+              <p>
+                Representa cualquier radio (input type="radio" (en-US)), checkbox (input type="checkbox") u option (option en un elemento select) que está marcado o conmutado a un estado on.
+              </p>
+              <div>
+                <input type="radio" name="my-input" id="yes">
+                <label for="yes">Yes</label>
+              
+                <input type="radio" name="my-input" id="no">
+                <label for="no">No</label>
+              </div>
+              
+              <div>
+                <input type="checkbox" name="my-checkbox" id="opt-in">
+                <label for="opt-in">Check me!</label>
+              </div>
+              
+              <select name="my-select" id="fruit">
+                <option value="opt1">Apples</option>
+                <option value="opt2">Grapes</option>
+                <option value="opt3">Pears</option>
+              </select>
+              
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 grammarerror">
-              <h1>:current</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 selection">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 :" >
               <h1>:default</h1>
+              <p>
+                Representa cualquier elemento de formulario que sea el predeterminado entre un grupo de elementos relacionados.
+              </p>
+              <input type="radio" name="season" id="spring">
+              <label for="spring">Spring</label>
+
+              <input type="radio" name="season" id="summer" checked>
+              <label for="summer">Summer</label>
+
+              <input type="radio" name="season" id="fall">
+              <label for="fall">Fall</label>
+
+              <input type="radio" name="season" id="winter">
+              <label for="winter">Winter</label>
+
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 spellingerror">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3  :">
               <h1>:dir</h1>
+              <p>
+                Coincide con los elementos en función de la direccionalidad del texto contenido en ellos.
+              </p>
+              <div dir="rtl">
+                <span>test1</span>
+                <div dir="ltr">test2
+                  <div dir="auto">עִבְרִית</div>
+                </div>
+              </div>              
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 :">
             <h1>:desabled</h1>
+            <p>
+              Representa a cualquier elemento deshabilitado. Un elemento se encuentra deshabilitado si no puede ser activado (por ejemplo ser selecionado, hacer click en él o aceptar texto de entrada) ni aceptar el foco. El elemento tiene además un estado habilitado en el cual puede ser activado o recibir foco.
+            </p>
+            <form action="#">
+              <fieldset id="shipping">
+                <legend>Dirección de Envío</legend>
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Dirección">
+                <input type="text" placeholder="Código postal">
+              </fieldset>
+              <br>
+              <fieldset id="billing">
+                <legend>Dirección de facturación</legend>
+                <label for="billing_is_shipping">Igual que la dirección de envío:</label>
+                <input type="checkbox" id="billing-checkbox" checked>
+                <br>
+                <input type="text" placeholder="Nombre" disabled>
+                <input type="text" placeholder="Dirección" disabled>
+                <input type="text" placeholder="Código postal" disabled>
+              </fieldset>
+            </form>
+            
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 before">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 :">
               <h1>:empty</h1>
+              <p>
+                Representa cualquier elemento que no tenga hijos. Los hijos pueden ser nodos de elemento o texto (incluido el espacio en blanco). Los comentarios o las instrucciones de procesamiento no afectan si un elemento se considera vacío.
+              </p>
+              <div class="box"></div>
+              <div class="box">Voy a ser de color rosa.</div>
+              <div class="box">
+              </div>
+
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 firstletter">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 :">
               <h1>:enabled</h1>
+              <p>
+                Representa cualquier elemento habilitado. Un elemento está habilitado si puede ser activado (es decir seleccionado, se puede hacer click en él, acepta que se le introduzca texto, etc.) o si accepta el foco. El elemento también tiene un estado deshabilitado el en cuál, no puede ser activado ni acepta el foco.
+              </p>
+              <form action="url_of_form">
+                <label for="FirstField">Primer campo (habilitado):</label>
+                <input type="text" id="FirstField" value="Lorem"><br>
+              
+                <label for="SecondField">Segundo campo (deshabilitado):</label>
+                <input type="text" id="SecondField" value="Ipsum" disabled="disabled"><br>
+              
+                <input type="button" value="Enviar">
+              </form>
+              
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 firstline">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 :">
               <h1>:first</h1>
+              <p>
+                Representa la primera página de un documento impreso.
+              </p>
+              <p>Primera página.</p>
+              <p>Segunda página.</p>
+              <button>Imprimir!</button>
+
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 grammarerror">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 :">
               <h1>:first child</h1>
+              <p>
+                Representa el primer elemento entre un grupo de elementos hermanos.
+              </p>
+              <div>
+                <p>¡Este texto está seleccionado!</p>
+                <p>Este texto no está seleccionado.</p>
+              </div>
+              
+              <div>
+                <h2>Este texto no está seleccionado: no es un `p`.</h2>
+                <p>Este texto no está seleccionado.</p>
+              </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 selection">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 :">
               <h1>:first of type</h1>
+              <p>
+                  Representa el primer elemento de su tipo entre un grupo de elementos hermanos.
+              </p>
+              <h2>Encabezado</h2>
+              <p>Párrafo 1</p>
+              <p>Párrafo 2</p>
+
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 spellingerror">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 :">
               <h1>:focus</h1>
+              <p>
+                Representa un elemento (como una entrada de formulario) que ha recibido el foco. Generalmente se activa cuando el usuario hace clic, toca un elemento o lo selecciona con la tecla "Tab" del teclado.
+              </p>
+              <input class="red-input" value="Voy a ser de color rojo cuando enfoque."><br>
+              <input class="blue-input" value="Voy a ser de color azul cuando enfoque.">
+
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:focus visible</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 before">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 :">
               <h1>:focus within</h1>
+              <p>
+                Representa un elemento que ha recibido el foco o que contiene un elemento que ha recibido el foco. 
+              </p>
+              <p>Intenta escribir en este formulario.</p>
+              <form>
+              <label for="given_name">Nombre:</label>
+              <input id="given_name" type="text">
+              <br>
+              <label for="family_name">Apellido:</label>
+              <input id="family_name" type="text">
+              </form>
+
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 firstletter">
-              <h1>:future</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 firstline">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 :">
               <h1>:hover</h1>
+              <p>
+                Coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamente lo activa. Generalmente se activa cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse).
+              </p>
+              <a href="#">Intenta pasar el mouse sobre este enlace.</a>
+
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 grammarerror">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 :">
               <h1>:indeterminate</h1>
+              <p>
+                Representa cualquier elemento de formulario cuyo estado sea indeterminado.
+              </p>
+              <div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Esta etiqueta comienza con el color lima.</label>
+              </div>
+              <div>
+                <input type="radio" id="radio">
+                <label for="radio">Esta etiqueta comienza con el color lima.</label>
+              </div>
+              
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 selection">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 selection">
               <h1>:in range</h1>
+              <p>
+                representa un elemento <input>cuyo valor real se encuentra dentro de los límites de rango especificados por los atributos miny max.
+              </p>
+              <form action="" id="form1">
+                <ul>Los valores entre 1 y 10 son válidos.
+                  <li>
+                    <input id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="12">
+                    <label for="value1">Tu valor esta </label>
+                  </li>
+                </ul>
+              </form>
+              
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 spellingerror">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 spellingerror">
               <h1>:invalid</h1>
+              <p>
+                Representa cualquier elemento <input> u otro elemento <form> cuyos contenidos no se puedan validar
+              </p>
+              <form>
+                <label for="url_input">Ingresa una URL:</label>
+                <input type="url" id="url_input" />
+                <br />
+                <br />
+                <label for="email_input">Introduzca una dirección de correo electrónico:</label>
+                <input type="email" id="email_input" required/>
+              </form>
+              
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 ">
             <h1>:lang</h1>
+            <p>
+              Es utilizada para modificar elementos en función del idioma en el que se determina que están.
+            </p>
+            <div lang="en"><q>Esta cita en inglés tiene una cita <q>anidada</q> adentro.</q></div>
+            <div lang="fr"><q>Esta cita en francés tiene una cita             <q>anidada</q> adentro.</q></div>
+            <div lang="de"><q>Esta cita en aleman tiene una cita            <q>anidada</q> adentro.</q></div>
+
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 before">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 before">
               <h1>:last child</h1>
+              <p>
+                Representa el último elemento entre un grupo de elementos hermanos.
+              </p>
+              <div>
+                <p>Este texto no está seleccionado.</p>
+                <p>¡Este texto está seleccionado!</p>
+              </div>
+              
+              <div>
+                <p>Este texto no está seleccionado.</p>
+                <h2>Este texto no está seleccionado: no es un `p`.</h2>
+              </div>
+              
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 firstletter">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 firstletter">
               <h1>:last of type</h1>
+              <p>
+                Representa el último elemento de su tipo entre un grupo de elementos hermanos.
+              </p>
+              <h2>Título</h2>
+              <p>Párrafo 1</p>
+              <p>Párrafo 2</p>
+
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 firstline">
-              <h1>:left</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 grammarerror">
-              <h1>:link</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 selection">
-              <h1>:local link</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 spellingerror">
-              <h1>:is ()</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:not</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 before">
-              <h1>:nth child</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 firstletter">
-              <h1>:nth of type</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 firstline">
-              <h1>:nth last child</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 grammarerror">
-              <h1>:nth last of type</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 selection">
-              <h1>:only child</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 spellingerror">
-              <h1>:only of type</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:optional</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:out-of-range</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:past</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:placeholder-shown</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:playing</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:paused</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:read-only</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:read-write</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:required</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:right</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:root</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:scope</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:valid</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:target</h1>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 after">
-            <h1>:visited</h1>
-          </div>
-        </div>
+         
 
   </div>
     <script src= "js/bootstrap.bundle.min.js"></script>

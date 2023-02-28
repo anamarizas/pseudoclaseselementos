@@ -10,22 +10,20 @@ body{
     height: 4rem;
 }
 .slider{
-    background-color: lightsteelblue;
+    background-color: aliceblue;
     height: 3rem;
     text-align:center;
-    color: azure;
+    color: black;
 }
 .after{
     background-color: lightblue;
     height: 15rem;
     text-align:center;
-    border: solid aliceblue 2px;
 }
 .before{
     background-color: lightblue;
     height: 15rem;
     text-align:center;
-    border: solid aliceblue 2px;
 }
 .firstletter{
     background-color: lightblue;
@@ -33,30 +31,212 @@ body{
     text-align:center;
     border: solid aliceblue 2px;
 }
+p {
+    height: 15rem;
+    line-height: 1.5;
+  }
+  h2 + p::first-letter {
+    color: black;
+    background-color: lightblue;
+    border-radius: 2px;
+    box-shadow: 3px 3px 0 lightseagreen;
+    font-size: 250%;
+    padding: 6px 3px;
+    margin-right: 6px;
+    float: left;
+  }
 .firstline{
     background-color: lightblue;
     height: 15rem;
     text-align:center;
-    border: solid aliceblue 2px;
+    
 }
 .grammarerror{
     background-color: lightblue;
     height: 15rem;
     text-align:center;
-    border: solid aliceblue 2px;
 }
 .selection{
     background-color:lightblue;
     height: 15rem;
     text-align:center;
-    border: solid aliceblue 2px;
 }  
 .spellingerror{
     background-color: lightblue;
     height: 15rem;
     text-align:center;
-    border: solid aliceblue 2px;
-} 
+}
+.active
+a:link { color: red; }          
+a:visited { color: palevioletred; }     
+a:hover { background: darkcyan; }  
+a:active { color: blue; }   
+
+a:any-link {
+    border: 1px solid blue;
+    color: orange;
+  }
+  
+  /* navegadores WebKit */
+  a:-webkit-any-link {
+    border: 1px solid blue;
+    color: orange;
+  }
+  div,
+select {
+  margin: 8px;
+}
+
+
+input:checked + label {
+  color: red;
+}
+
+
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+
+
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+
+
+option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}
+.box {
+    background: pink;
+    height: 80px;
+    width: 80px;
+  }
+  
+  .box:empty {
+    background: lime;
+  }
+  input:enabled {
+    color: #2b2;
+  }
+  
+  input:disabled {
+    color: #aaa;
+  }
+  @page :first {
+    margin-left: 50%;
+    margin-top: 50%;
+  }
+  
+  p {
+    page-break-after: always;
+  }
+  p:first-child {
+    color: lime;
+    background-color: black;
+    padding: 5px;
+  }
+  p:first-of-type {
+    color: red;
+    font-style: italic;
+  }
+  .red-input:focus {
+    background: yellow;
+    color: red;
+  }
+  
+  .blue-input:focus {
+    background: yellow;
+    color: blue;
+  }
+  form {
+    border: 1px solid;
+    color: gray;
+    padding: 4px;
+  }
+  
+  form:focus-within {
+    background: #ff8;
+    color: black;
+  }
+  
+  input {
+    margin: 4px;
+  }
+  a {
+    background-color: powderblue;
+    transition: background-color .5s;
+  }
+  
+  a:hover {
+    background-color: gold;
+  }
+  input:indeterminate + label {
+    background: lime;
+  }
+  li {
+    list-style: none;
+    margin-bottom: 1em;
+  }
+  
+  input {
+    border: 1px solid black;
+  }
+  
+  input:in-range {
+    background-color: rgba(0, 255, 0, 0.25);
+  }
+  
+  input:out-of-range {
+    background-color: rgba(255, 0, 0, 0.25);
+    border: 2px solid red;
+  }
+  
+  input:in-range + label::after {
+    content: 'bien.';
+  }
+  
+  input:out-of-range + label::after {
+    content: 'fuera de rango!';
+  }
+  input:invalid {
+    background-color: #ffdddd;
+  }
+  
+  form:invalid {
+    border: 5px solid #ffdddd;
+  }
+  
+  input:valid {
+    background-color: #ddffdd;
+  }
+  
+  form:valid {
+    border: 5px solid #ddffdd;
+  }
+  
+  input:required {
+    border-color: #800000;
+    border-width: 3px;
+  }
+  
+  input:required:invalid {
+    border-color: #C00000;
+  }
+  :lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; }
+  :lang(fr) > q { quotes: '« ' ' »'; }
+  :lang(de) > q { quotes: '»' '«' '\2039' '\203A'; }
+  p:last-child {
+    color: lime;
+    background-color: black;
+    padding: 5px;
+  }
+  p:last-of-type {
+    color: red;
+    font-style: italic;
+  }
+           
+
     
   
 
