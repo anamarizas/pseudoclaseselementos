@@ -7,29 +7,28 @@ body{
 .menu{
     background-color: aliceblue;
     text-align: center;
-    height: 4rem;
+    height: 2rem;
 }
 .slider{
     background-color: aliceblue;
-    height: 3rem;
+    height: 4rem;
     text-align:center;
     color: black;
 }
 .after{
-    background-color: lightblue;
+    background-color: lightpink;
     height: 15rem;
     text-align:center;
 }
 .before{
-    background-color: lightblue;
+    background-color: lightpink;
     height: 15rem;
     text-align:center;
 }
 .firstletter{
-    background-color: lightblue;
+    background-color: lightpink;
     height: 15rem;
     text-align:center;
-    border: solid aliceblue 2px;
 }
 p {
     height: 15rem;
@@ -37,50 +36,49 @@ p {
   }
   h2 + p::first-letter {
     color: black;
-    background-color: lightblue;
+    background-color: lightpink;
     border-radius: 2px;
-    box-shadow: 3px 3px 0 lightseagreen;
+    box-shadow: 3px 3px 0 purple;
     font-size: 250%;
     padding: 6px 3px;
     margin-right: 6px;
     float: left;
   }
 .firstline{
-    background-color: lightblue;
+    background-color: lightpink;
     height: 15rem;
     text-align:center;
     
 }
 .grammarerror{
-    background-color: lightblue;
+    background-color: lightpink;
     height: 15rem;
     text-align:center;
 }
 .selection{
-    background-color:lightblue;
+    background-color:lightpink;
     height: 15rem;
     text-align:center;
 }  
 .spellingerror{
-    background-color: lightblue;
+    background-color: lightpink;
     height: 15rem;
     text-align:center;
 }
 .active
-a:link { color: red; }          
+a:link { color: purple; }          
 a:visited { color: palevioletred; }     
-a:hover { background: darkcyan; }  
-a:active { color: blue; }   
+a:hover { background: plum; }  
+a:active { color: lightcoral; }   
 
 a:any-link {
-    border: 1px solid blue;
-    color: orange;
+    border: 2px solid plum;
+    color: black;
   }
-  
-  /* navegadores WebKit */
+
   a:-webkit-any-link {
-    border: 1px solid blue;
-    color: orange;
+    border: 2px solid purple;
+    color: black;
   }
   div,
 select {
@@ -89,12 +87,12 @@ select {
 
 
 input:checked + label {
-  color: red;
+  color: black;
 }
 
 
 input[type="radio"]:checked {
-  box-shadow: 0 0 0 3px orange;
+  box-shadow: 0 0 0 3px palevioletred;
 }
 
 
@@ -104,24 +102,24 @@ input[type="checkbox"]:checked {
 
 
 option:checked {
-  box-shadow: 0 0 0 3px lime;
-  color: red;
+  box-shadow: 0 0 0 3px lightslategray;
+  color:black;
 }
 .box {
-    background: pink;
+    background: lightpink;
     height: 80px;
     width: 80px;
   }
   
   .box:empty {
-    background: lime;
+    background: lightpink;
   }
   input:enabled {
-    color: #2b2;
+    color: black;
   }
   
   input:disabled {
-    color: #aaa;
+    color: black;
   }
   @page :first {
     margin-left: 50%;
@@ -132,47 +130,47 @@ option:checked {
     page-break-after: always;
   }
   p:first-child {
-    color: lime;
-    background-color: black;
+    color: lightpink;
+    background-color: lightpink;
     padding: 5px;
   }
   p:first-of-type {
-    color: red;
+    color: lightpink;
     font-style: italic;
   }
   .red-input:focus {
-    background: yellow;
-    color: red;
+    background: lightpink;
+    color: black;
   }
   
   .blue-input:focus {
-    background: yellow;
-    color: blue;
+    background: lightpink;
+    color: black;
   }
   form {
-    border: 1px solid;
-    color: gray;
+    border: 2px solid;
+    color: black;
     padding: 4px;
   }
   
   form:focus-within {
-    background: #ff8;
+    background: lightpink;
     color: black;
   }
   
   input {
-    margin: 4px;
+    margin: 2px;
   }
   a {
-    background-color: powderblue;
+    background-color: lightpink;
     transition: background-color .5s;
   }
   
   a:hover {
-    background-color: gold;
+    background-color: violet;
   }
   input:indeterminate + label {
-    background: lime;
+    background: lightpink;
   }
   li {
     list-style: none;
@@ -180,16 +178,16 @@ option:checked {
   }
   
   input {
-    border: 1px solid black;
+    border: 2px solid black;
   }
   
   input:in-range {
-    background-color: rgba(0, 255, 0, 0.25);
+    background-color: lightpink;
   }
   
   input:out-of-range {
-    background-color: rgba(255, 0, 0, 0.25);
-    border: 2px solid red;
+    background-color: lightpink;
+    border: 2px solid darkslateblue;
   }
   
   input:in-range + label::after {
@@ -200,39 +198,39 @@ option:checked {
     content: 'fuera de rango!';
   }
   input:invalid {
-    background-color: #ffdddd;
+    background-color:lightpink;
   }
   
   form:invalid {
-    border: 5px solid #ffdddd;
+    border: 2px solid palevioletred;
   }
   
   input:valid {
-    background-color: #ddffdd;
+    background-color: lightpink;
   }
   
   form:valid {
-    border: 5px solid #ddffdd;
+    border: 2px solid lightcoral;
   }
   
   input:required {
-    border-color: #800000;
+    border-color: lightpink;
     border-width: 3px;
   }
   
   input:required:invalid {
-    border-color: #C00000;
+    border-color: lightpink;
   }
   :lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; }
   :lang(fr) > q { quotes: '« ' ' »'; }
   :lang(de) > q { quotes: '»' '«' '\2039' '\203A'; }
   p:last-child {
-    color: lime;
-    background-color: black;
+    color: violet;
+    background-color: lightpink;
     padding: 5px;
   }
   p:last-of-type {
-    color: red;
+    color: black;
     font-style: italic;
   }
            
